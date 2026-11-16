@@ -1,0 +1,25 @@
+# APK QA offline, emulador dedicado, matrícula QA01 ativa e sem marcação hoje.
+appId: com.pablovitor.accessid.qa
+---
+- launchApp
+- tapOn: "Usar matrícula e PIN"
+- tapOn: "Digite sua matrícula"
+- inputText: "QA01"
+- tapOn: "Digite seu PIN"
+- inputText: "1234"
+- hideKeyboard
+- tapOn: "Identificar"
+- assertVisible: "ENTRADA"
+- tapOn: "Confirmar entrada"
+- assertVisible: "ENTRADA registrada"
+- tapOn: "OK"
+- tapOn: "Digite sua matrícula"
+- inputText: "QA01"
+- tapOn: "Digite seu PIN"
+- inputText: "1234"
+- hideKeyboard
+- tapOn: "Identificar"
+- assertVisible: "SAÍDA"
+- tapOn: "Confirmar saída"
+- assertVisible: "SAÍDA registrada"
+- tapOn: "OK"
