@@ -267,11 +267,12 @@ Reconhecimento facial, exportação de relatórios e recuperação de PIN admini
 
 ## Integrantes da equipe
 
-Preencher os nomes completos antes da entrega:
-
-- [Nome completo do integrante]
-- [Nome completo do integrante]
-- [Adicionar outros integrantes conforme necessário]
+| Nome completo | Matrícula |
+| --- | --- |
+| João Vitor Santos Carvalho | 25391 |
+| Gabriel Rodrigues Mota | 25446 |
+| Pablo Vinicius Soares Vitor | 25235 |
+| Patrick Soares Vitor | 25237 |
 
 ## Licença
 
