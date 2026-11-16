@@ -273,6 +273,7 @@ Reconhecimento facial, exportação de relatórios e recuperação de PIN admini
 | Gabriel Rodrigues Mota | 25446 |
 | Pablo Vinicius Soares Vitor | 25235 |
 | Patrick Soares Vitor | 25237 |
+| João Pedro Beloti Freitas | 25489 |
 
 ## Licença
 
