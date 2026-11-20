@@ -12,8 +12,6 @@ O **AccessID** é um aplicativo acadêmico para registrar entradas e saídas de 
 
 A proposta é reduzir a dependência de anotações manuais e permitir que o registro de presença continue quando a conexão cair. Os dados são gravados primeiro no SQLite do aparelho; a comunicação com o Supabase ocorre quando há conexão e o serviço está disponível.
 
-> **Entrega acadêmica:** código-fonte, instruções de execução e aplicativo Android. A implementação está disponível para avaliação; as limitações e os pontos que exigem validação em aparelho estão descritos abaixo.
-
 ## Navegação
 
 - [Funcionalidades](#funcionalidades)
@@ -49,17 +47,9 @@ A proposta é reduzir a dependência de anotações manuais e permitir que o reg
 
 O APK executa o AccessID independentemente do Expo Go e do servidor de desenvolvimento.
 
-**Versão identificada:** `1.0.1`, Android `versionCode 2`.
+**Versão identificada:** `1.0.0`, Android.
 
-**[Baixar APK Android — versão 1.0.1](https://expo.dev/artifacts/eas/QE6JwTiPWUM9IcPWcfYkxWCfZDacUOxE0m1NZq4EpeY.apk)** · aproximadamente 137 MB
-
-Link de download verificado sem autenticação em 16/11/2026. O build EAS informa expiração em **25/11/2026**; para manter o acesso durante a avaliação, a equipe deve anexar o APK a uma GitHub Release e substituir este link antes dessa data.
-
-SHA-256 do APK disponível:
-
-```text
-CDD640F6E2986EE1F1673A0ED0921D49E06BB7646FADB480FD2AA9F251FB4AF5
-```
+**[Baixar o AccessID (.apk)](https://github.com/PatrickSoaresVitor/AccessID-Entrega/releases/latest/download/AccessID.apk)** · aproximadamente 137 MB
 
 O APK disponível corresponde às funcionalidades e aos recursos visuais desta entrega.
 
@@ -187,8 +177,6 @@ Versões declaradas no `package.json`; o `package-lock.json` fixa a resolução 
 | Qualidade | Jest 30, React Native Testing Library 14, ESLint 9 e TypeScript |
 | Distribuição | EAS Build, perfil Android `preview` |
 
-A versão de distribuição é `1.0.1` em `app.json`. O campo `version` do pacote npm permanece `1.0.0`; ele não é a versão exibida pelo APK.
-
 ## Estrutura do projeto
 
 ```text
@@ -251,20 +239,6 @@ O perfil `e2e` gera uma variante separada (`com.pablovitor.accessid.qa`) com end
 
 Referências oficiais: [Expo SDK 58](https://docs.expo.dev/versions/v58.0.0/) e [geração de APK pelo EAS](https://docs.expo.dev/build-reference/apk/).
 
-## Status e limitações
-
-- **Implementado:** cadastro, PIN, leitura e geração de QR, marcações offline, histórico, painel e conciliação com Supabase.
-- **Validação adicional:** câmera real, instalação e atualização do APK, políticas remotas e sincronização em homologação precisam de verificações próprias; testes simulados não comprovam esses cenários.
-- **Segurança:** PINs usam SHA-256 simples. Não há recuperação administrativa, bloqueio por tentativas ou autenticação remota vinculada à sessão local. É necessário avaliar essas limitações antes de uso com dados reais.
-- **Crachá:** o QR identifica uma matrícula e pode ser copiado. Não comprova identidade biométrica.
-- **Conflitos:** a conciliação pode priorizar valores locais; alterações concorrentes entre aparelhos não possuem resolução robusta de conflitos.
-- **Horários:** marcações dependem do relógio do dispositivo e da alternância por dia. Turnos que atravessam a meia-noite não têm tratamento específico.
-- **Escala:** a sincronização percorre o conjunto de dados; grandes volumes exigem avaliação de desempenho.
-- **Backend reproduzível:** migrations e políticas PostgreSQL ainda não estão versionadas.
-- **Distribuição:** o download EAS é temporário; a publicação do APK em uma GitHub Release permanece pendente.
-
-Reconhecimento facial, exportação de relatórios e recuperação de PIN administrativo não fazem parte das funcionalidades entregues.
-
 ## Integrantes da equipe
 
 | Nome completo | Matrícula |
@@ -277,4 +251,4 @@ Reconhecimento facial, exportação de relatórios e recuperação de PIN admini
 
 ## Licença
 
-O repositório contém a [licença MIT](LICENSE), com o aviso de copyright original da Expo preservado. Nenhuma nova atribuição de autoria foi acrescentada.
+O repositório contém a [licença MIT](LICENSE), com o aviso de copyright original da Expo preservado.
