@@ -22,7 +22,6 @@ A proposta é reduzir a dependência de anotações manuais e permitir que o reg
 - [Estrutura do projeto](#estrutura-do-projeto)
 - [Testes e qualidade](#testes-e-qualidade)
 - [Gerar APK Android](#gerar-apk-android)
-- [Status e limitações](#status-e-limitações)
 - [Integrantes da equipe](#integrantes-da-equipe)
 - [Licença](#licença)
 
